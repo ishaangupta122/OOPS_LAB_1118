@@ -6,20 +6,20 @@ using namespace std;
 class B;  // Forward declaration
 
 class A {
- private:
   int value;
 
  public:
   A(int v) : value(v) {}
+
   friend int add(A, B);
 };
 
 class B {
- private:
   int value;
 
  public:
   B(int v) : value(v) {}
+
   friend int add(A, B);
 };
 

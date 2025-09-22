@@ -6,40 +6,47 @@ using namespace std;
 class B;  // Forward declaration
 
 class A {
- private:
-  int value;
+  int a, b;
 
  public:
-  A(int v) : value(v) {}
+  A(int a, int b) : a(a), b(b) {}
+
   void display() {
-    cout << "A: " << value << endl;
+    cout << "Class 1" << endl;
+    cout << "A: " << a << endl;
+    cout << "B: " << b << endl;
   }
 
   friend void swapValues(A&, B&);
 };
 
 class B {
- private:
-  int value;
+  int a, b;
 
  public:
-  B(int v) : value(v) {}
+  B(int a, int b) : a(a), b(b) {}
+
   void display() {
-    cout << "B: " << value << endl;
+    cout << "Class B" << endl;
+    cout << "A: " << a << endl;
+    cout << "B: " << b << endl;
   }
 
   friend void swapValues(A&, B&);
 };
 
 void swapValues(A& objA, B& objB) {
-  int temp = objA.value;
-  objA.value = objB.value;
-  objB.value = temp;
+  int temp1 = objA.a;
+  objA.a = objB.a;
+  objB.a = temp1;
+  int temp2 = objA.b;
+  objA.b = objB.b;
+  objB.b = temp2;
 }
 
 int main() {
-  A a(10);
-  B b(20);
+  A a(10, 20);
+  B b(30, 40);
 
   cout << "Before swap:\n";
   a.display();
