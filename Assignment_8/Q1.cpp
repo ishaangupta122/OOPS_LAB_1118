@@ -1,0 +1,1 @@
+// 1. Write a C++ program to write number 1 to 200 in a data file NUM.TXT.

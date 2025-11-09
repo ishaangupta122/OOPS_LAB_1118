@@ -1,0 +1,1 @@
+// 6. Practice file pointers using functions seekp(), seekg(), tellp() and tellg().

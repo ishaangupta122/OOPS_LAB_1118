@@ -1,0 +1,1 @@
+// 4. Write a program to copy the contents of one file to another.
