@@ -1,0 +1,1 @@
+// 6. Write a program in C++ to overload input operator(>>) and output operator(<<).

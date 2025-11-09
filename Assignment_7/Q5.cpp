@@ -1,0 +1,1 @@
+// 5. Overload ‘()’ to input arbitrary number of input arguments for an object.
